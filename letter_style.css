@@ -1,0 +1,216 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 150vh;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, white, #c3b4f7);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.fixed_heading {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: teal;
+    z-index: 1000;
+    padding: 20px;
+    font-weight: bold;
+
+    animation: fadeIn 1.5s ease-out;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+    color: #444242;
+    margin-left: 15px;
+}
+
+#breathing {
+    text-decoration: underline;
+    color: rgb(0, 89, 89);
+}
+
+#jetaime {
+    color: rgb(0, 89, 89);
+    font-style: italic;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+#jetaime:hover, #jetaime:active {
+    cursor: url('moon15.png') 10 10, auto;
+    transform: scale(1.02);
+}
+
+p {
+    font-style: italic;
+    display: inline;
+    color: rgb(0, 89, 89);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(137, 180, 192, 0.7);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(137, 180, 192, 0.9);
+}
+
+
+
+h3 {
+    display: block;
+    width: 80%; 
+    margin: 0; 
+}
+
+h2 {
+    margin: 0;
+}
+
+.container h2, .container h3 {
+    margin: 5px;
+}
+
+
+.normb{
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: teal;
+    font-size: 25px;
+    padding: 15px 30px;
+    width: fit-content;
+}
+
+button:hover {
+    cursor: url('heart15.png') 10 10, auto;
+}
+
+
+@media (max-width: 768px) {
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+}
+
+
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.mySlides img{
+    position: relative;
+    z-index: 5;
+    max-height: 75vh;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+.slide-cont {
+    position: relative;
+    max-width: 100%;
+    background-color: #edc69f;
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+    visibility: visible ;
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.3 ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #004d4d;
+    text-decoration: underline;
+    cursor: url('heart15.png') 10 10, auto;
+}
+

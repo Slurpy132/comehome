@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Iris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="song_style.css">
+ 
+</head>
+
+<audio id="audio" controls autoplay style="display: none;">
+    <source src="songs/iris_lyrics.mp3" type="audio/mpeg">
+</audio>
+
+     <h1 class="fixed_heading">This Reminds Me Of Us:</h1>
+     <h4 id="wait">(Wait and stay till the end, <p style="text-decoration: underline; font-weight: bolder; color: teal; display: inline;">until the moon appears - trust me</p>)</h4>
+
+     <div id="lyrics-container">
+      <span id="lyrics-text"></span><span id="cursor">|</span>
+     </div>
+
+    <div id="button-container">
+      <button onclick="goFlowy()">Click For Your Final Surprise ;)</button>
+      <button onclick="goMySong()">Back</button>
+    </div>
+
+
+<script src="song_code.js"></script>
+</body>
+</html>

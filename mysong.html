@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>My Voice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="mysong.css">
+</head>
+
+  <div id="particles-js"></div>
+  <h1 class="fixed_heading">I Hope You Like This</h1>
+  <h3 id="voiceh">Just something for you:</h3>
+  <h4 style="position: relative; z-index: 2; font-style: italic; color: #5E5E5E;">(Also don't forget to scroll till the end)</h4>
+  <div class="container">
+    <div class="audio-card">
+      <h3>The Chair by the Ocean</h3>
+      <p>I wrote this for you. I even submitted it to a national writing competition. I don't have any expectations of it winning - but I just wanted to show it to people. And now I'm showing it to you. I hope you like it.</p>
+      <audio controls>
+        <source src="songs/chair.m4a" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-card">
+      <h3>Une Lettre a Elle</h3>
+      <p>Something in French for you. I've learnt French enough to write things like this 😛. I don't know if you'll understand, but here it is.</p>
+      <audio controls>
+        <source src="songs/unelettre.m4a" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-card">
+      <h3>???</h3>
+      <p>Just listen.</p>
+      <audio controls>
+        <source src="songs/Smtg.m4a" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <!-- Add more audio-card blocks below as needed -->
+  </div>
+  
+
+  <div class="button-section">
+    <div class="button-container">
+        <button onclick="goSong()">Theres Still More ;)</button>
+        <button onclick="goTimeline()" id="back"><- Back</button>
+    </div>
+</div>
+<h4 id="noback">(Don't go back yet)</h4>
+
+
+<script src="main.js">
+</script>
+<script src="particles.js"></script> <script>
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 100, 
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "shape": {
+        "type": "image", 
+        "image": {
+          "src": "heart100.png", 
+          "width": 30,
+          "height": 30
+        }
+      },
+      "size": {
+        "value": 10,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "bottom",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },  
+  });
+</script>
+</body>
+</html>

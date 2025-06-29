@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wait {
+    color: #5E5E5E;
+    font-style: italic;
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+}
+
+#lyrics-container {
+    font-style: italic;
+    text-align: center;
+    white-space: pre-wrap;
+    color: white;
+    padding: 0 2rem;
+    max-width: 80%;
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+    width: auto;
+}
+
+#cursor {
+    content: '|';
+    animation: blink 0.8s steps(1, start) infinite;
+}
+
+@keyframes blink {
+    50% {opacity: 0;}
+}
+
+#lyrics-container.visible {
+    opacity: 1;
+}
+
+#lyrics-container.fade-out {
+    opacity: 0;
+}
+
+body {
+    background-color: #000;
+    transition: background-color 1s ease-in-out;
+}
+
+/*#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, white, #c3b4f7);
+}*/
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.fixed_heading {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: teal;
+    z-index: 1000;
+    padding: 20px;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+h3 {
+    display: block;
+    width: 80%; 
+    margin: 0; 
+}
+
+h2 {
+    margin: 0;
+}
+
+.container h2, .container h3 {
+    margin: 5px;
+}
+
+
+button {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: teal;
+    font-size: 15px;
+    padding: 15px 30px;
+    width: fit-content;
+    margin: 15px;
+}
+
+button:hover {
+    cursor: url('heart15.png') 10 10, auto;
+}
+
+
+@media (max-width: 768px) {
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    #lyrics-container {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    #wait {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    #lyrics-container {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
