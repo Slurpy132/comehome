@@ -14,6 +14,10 @@ function goSong() {
     window.location.href="song.html";
 }
 
+function goLanding() {
+    window.location.href="landing.html";
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     particlesJS('particles-js', {
         "particles": {
@@ -105,7 +109,7 @@ window.onload = function () {
 };
 
 function checkPassword() {
-      const correctPassword = "owie"; // Change this to your password
+      const correctPassword = "owie";
       const input = document.getElementById("passwordInput").value.trim();
 
       if (input === correctPassword) {

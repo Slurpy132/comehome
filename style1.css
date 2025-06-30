@@ -1,0 +1,97 @@
+h3 {
+    display: block;
+    width: 80%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+button{
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: teal;
+    font-size: 25px;
+    padding: 15px 30px;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, white, #c3b4f7);
+}
+
+button:hover {
+    cursor: url('heart15.png') 10 10, auto;
+}
+
+.fixed_heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: teal;
+    z-index: 1000;
+    margin-top: 0;
+    padding: 25px;
+    font-weight: bold;
+    border-radius: none;
+}
+
+#letter-container {
+    margin-top: 100px;
+}
+
+.password-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#ogb1 {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+#add_pad {
+    padding: 5px;
+
+}
+
+#hintText {
+    padding: 10px;
+}

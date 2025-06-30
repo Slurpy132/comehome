@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>Hi Lasya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    #particles-js { 
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="particles-js"></div>
+    <div class="container password-container">
+      <h3 id="hintText" style="color: #444;">Here's a little hint: What did we say when we got hurt? (ow_e, all small letters)</h3>
+      <input type="password" id="passwordInput" placeholder="Enter the secret password" class="form-control" style="max-width: 300px; margin-top: 10px;">
+      <br>
+      <button id="submitPasswordBtn" onclick="checkPassword()" class="btn btn-primary">Submit</button>
+      <br><br>
+      <button id="ogb" onclick="goLetter()" class="btn btn-primary">Click Me</button>
+      <br>
+      <h4 style="color: #444242">(It's a long ride, so get ready)</h4>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="particles.js"></script> 
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 100, 
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "shape": {
+          "type": "image", 
+          "image": {
+            "src": "heart100.png", 
+            "width": 30,
+            "height": 30
+          }
+        },
+        "size": {
+          "value": 10,
+          "random": true
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "bottom",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
